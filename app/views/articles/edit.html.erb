@@ -1,0 +1,13 @@
+<div>
+  <h1>Edit task</h1>
+  <br>
+
+    <%= form_with model: @article do |f| %>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+      <%= f.label :content %>
+      <%= f.text_field :content %>
+      <%= f.submit %>
+      <%= link_to "!!!  Return to the index   !!!", articles_path %>
+    <% end %>
+</div>
